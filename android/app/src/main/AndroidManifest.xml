@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cicerone_project">
    <application
-        android:label="cicerone_project"
+        android:label="Cicerone"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
