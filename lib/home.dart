@@ -5,9 +5,7 @@ import 'package:cicerone_project/account_settings.dart';
 import 'package:cicerone_project/map_screen.dart';
 import 'package:cicerone_project/sample_map.dart';
 import 'package:cicerone_project/show_error_dialog.dart';
-//import 'package:cicerone_project/sign_up.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
-import 'package:cicerone_project/about_us.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -282,23 +280,6 @@ Widget buildMenuItems(BuildContext context) => Container(
             signOut();
             Navigator.pushReplacement(context,
                 MaterialPageRoute(builder: (context) => const SignupPage()));
-          },
-        ),
-        const SizedBox(
-          width: 40,
-          height: 120,
-        ),
-        const Divider(color: Colors.black54),
-        ListTile(
-          leading: const Icon(Icons.people),
-          title: const Text('About us'),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const Aboutus(),
-              ),
-            );
           },
         ),
       ],
